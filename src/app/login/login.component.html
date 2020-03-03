@@ -1,0 +1,8 @@
+<h2  >
+Login
+</h2>
+
+<div *ngFor="let patient of patients; index as patientId">
+  <a [routerLink]="['/patient',patientId]">{{patient.patientName}}
+  </a>
+</div>
