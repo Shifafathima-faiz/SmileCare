@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { LoginComponent } from './login/login.component';
 import { PatientDetailsComponent } from './patient-details/patient-details.component';
+import { PatientService } from './patient.service';
 
 @NgModule({
     imports: [
@@ -19,6 +20,7 @@ import { PatientDetailsComponent } from './patient-details/patient-details.compo
     ])
   ],
   declarations: [ AppComponent,  TopBarComponent, LoginComponent, PatientDetailsComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [PatientService]
 })
 export class AppModule { }
